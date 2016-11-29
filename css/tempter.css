@@ -1,0 +1,126 @@
+body {
+	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+}
+
+/* change the URL to a picture of your choice - the higher quality the better! */
+.business-header {
+	height: 300px;
+/*	background: url("images/g1.png") center center no-repeat;*/
+	background-size: cover;
+/*	border:2px solid #222333;*/
+}
+
+.navbar-inverse {
+    background-color: #e6003b;
+    border-color: #e6003b;
+    height: 30px;
+}
+/*.nav navbar-nav{
+	color: #fff;
+}*/
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-weight: bold;
+    }
+    .navbar-inverse .navbar-nav > li > a:hover{
+    	background-color: #929487;
+
+    }
+.btn-tag{
+	background-color: #e6003b;
+    border-color: #e6003b;
+    width: 250px;
+}
+.btn-tag:hover{
+	background-color: #f0ab4e;
+	color:#fff; 
+	font-weight:bolder;
+}
+
+hr{ 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    /*color: #222333;*/
+}
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.428571429;
+  background-color:#eee;
+  border: 1px solid #f2dede;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.thumbnail > img,
+.thumbnail a > img {
+  display: block;
+  max-width: 100%;
+  /*height: auto;*/
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn-premium{
+	background-color: #f0ab4e;
+	color:#662200; 
+	font-weight:bold;
+	border-color: #f0ab4e;
+	height: 30px;
+}
+.btn-premium:hover{
+	background-color: #e6003b;
+	color:#fff; 
+	font-weight:bolder;
+	height: 40px;
+}
+.fa{
+	color: #662200; 
+    margin-left: 21px;
+    padding-left: -10px;
+}
+.fa:hover{
+	color: #e6003b;
+
+}
+.thumbnail .caption {
+    /* padding: 9px; */
+    color: #080808;
+}
+/* adjust the color and text shadow to optimize legibility once you have an image set - you can also change the vertical positioning if desired  */
+.tagline {
+	color: #fff;
+	text-shadow: 0 0 10px #000;
+	font-family: inherit;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 20px;
+    right: 450px;
+}
+.row-rl-margin{  
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1020px;
+}
+
+footer {
+	margin: 50px 0;
+}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
