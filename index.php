@@ -38,13 +38,15 @@
                     <li><a href="near-you.php">Near You</a></li>
                     <li><a href="view-match.php">Matches</a></li>
                     <li><a href="#">Get Escort</a></li>
-                    <li><a href="#">Recent Activity</a></li>
-                    <li class="nav  navbar-right"><a href="login.php"><img src="images/g1.png" height="31px" alt="Tempter"></a>
-                        <!-- <ul>
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                        </ul> -->
+                    <li><a href="#">Recent Activity</a></li>                       
+                    <li class="nav  navbar-right dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.php"><img src="images/g1.png" height="31px" alt="Tempter"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Profile</a></li>
+                          <li><a href="#">Edit Profile</a></li>
+                          <li><a href="#">Chat</a></li>
+                          <li><a href="#">--------------</a></li>
+                          <li><a href="#">Logout</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>

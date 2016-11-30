@@ -11,8 +11,8 @@ body {
 }
 
 .navbar-inverse {
-    background-color: #e6003b;
-    border-color: #e6003b;
+    background-color: #e20025;
+    border-color: #e20025;
     height: 30px;
 }
 /*.nav navbar-nav{
@@ -196,6 +196,62 @@ label{
     margin-bottom: 40px;
 
 }
+
+/*=====================================================================================*/
+.box-widget {
+    border: none;
+    position: relative;
+}
+
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    /*border-top: 3px solid #d2d6de;*/
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.widget-user-header{
+	/*left: 50px;
+    top: 100px;*/
+    /*position: relative;*/
+    height: 70px;
+    background-image: url("../images/Rectangle2.png");
+    background-size: cover;    
+}
+.widget-user .widget-user-image {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -45px;
+    }
+    .widget-user .box-footer {
+    padding-top: 70px;
+}
+.box-footer {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+    background-color: #fff;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+bg-aqua-active{
+    background-color: #00a7d0 !important;
+}
+/*===================================================================================*/
 a {
     color: #fff;
     text-decoration: none;
