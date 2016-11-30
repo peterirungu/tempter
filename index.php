@@ -41,7 +41,7 @@
                     <li><a href="#">Recent Activity</a></li>                       
                     <li class="nav  navbar-right dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.php"><img src="images/g1.png" height="31px" alt="Tempter"><span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                          <li><a href="#">Profile</a></li>
+                          <li><a href="profile-view.php">Profile</a></li>
                           <li><a href="#">Edit Profile</a></li>
                           <li><a href="#">Chat</a></li>
                           <li><a href="#">--------------</a></li>
