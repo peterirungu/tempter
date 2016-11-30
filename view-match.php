@@ -53,7 +53,7 @@
         <!-- /.container -->
     </nav>
     <div class="row-rl-margin">
-        <button class="btn-premium pull-right"><span class="fa fa-asterisk" aria-hidden="true"></span> Become a Premium Member</button>
+       <a href="#"> <button class="btn-premium pull-right"><span class="fa fa-asterisk" aria-hidden="true"></span> Become a Premium Member</button></a>
         <p style="color:#662200; font-weight:bold;">Matches </p>
 
         <hr style="color:#662200;">

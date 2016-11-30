@@ -39,7 +39,7 @@
                     <li><a href="view-match.php">Matches</a></li>
                     <li><a href="#">Get Escort</a></li>
                     <li><a href="#">Recent Activity</a></li>
-                    <li class="nav  navbar-right"><a href="#"><img src="images/g1.png" height="31px" alt="Tempter"></a>
+                    <li class="nav  navbar-right"><a href="login.php"><img src="images/g1.png" height="31px" alt="Tempter"></a>
                         <!-- <ul>
                             <li><a href="#">Link 1</a></li>
                             <li><a href="#">Link 2</a></li>
