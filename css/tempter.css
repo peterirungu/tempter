@@ -82,8 +82,9 @@ hr{
 }
 .fa{
 	color: #662200; 
-    margin-left: 21px;
-    padding-left: -10px;
+   /* margin-left: 21px;*/
+    /*padding-left: -10px;*/
+    padding: 4px;
 }
 .fa:hover{
 	color: #e6003b;
@@ -113,13 +114,26 @@ hr{
  .signup-bg 
 { 
     left: 50px;
-    top: 100px;
-    position: relative;
+  /*  top: 100px;*/
+    margin-top: 100px;
+    margin-bottom: 40px;
+  /*  position: relative;*/
     height: 500px;
     background-image: url("../images/Rectangle2.png");
     background-size: cover;    
 }
- .login-bg 
+ .login-bg-l
+{ 
+    left: 200px;
+    /* top: 100px; */
+    margin-top: 100px;
+    margin-bottom: 10px;
+    /* position: relative; */
+    height: 450px; 
+    background-image: url("../images/Rectangle2copy.png");
+    background-size: cover;   
+} 
+ .login-bg1
 { 
     left: 200px;
     top: 100px;
@@ -196,6 +210,10 @@ label{
     margin-bottom: 40px;
 
 }
+.auth-home a{   
+    color: #000;
+    text-decoration: none;
+}
 
 /*=====================================================================================*/
 .box-widget {
@@ -251,6 +269,64 @@ label{
 bg-aqua-active{
     background-color: #00a7d0 !important;
 }
+
+body {
+  padding : 10px ;
+  
+}
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+    color: #080808;
+    background-color: #fcf8e3;
+    padding: 5px 15px;
+    width: 990px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #e20025 !important;
+}
+/*.nav-pills{
+    color: #fff;
+    background-color: #e20025 !important;
+}*/
+.nav-pills > li + li {
+    margin-left: 9px;
+    background-color: #8a191b;
+}
+.nav > li {
+    position: relative;
+    display: block;
+    background-color: brown;
+}
+
+
+
+
+
 /*===================================================================================*/
 a {
     color: #fff;
