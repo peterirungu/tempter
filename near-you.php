@@ -4,7 +4,7 @@
 <p style="color:#662200; font-weight:bold;">Near You</p>
 <hr style="color:#662200;">
 <div class="">
-    <img src="images/map.jpeg" alt="" width="990px" height="400px">
+    <img src="images/map.PNG" alt="" width="990px" height="400px">
 </div>
 <br>
 <div class="row">

@@ -1,36 +1,4 @@
 <?php include 'header.php' ?>
-<?php
-
-include 'includes/config.php';
-if(isset($_POST['submit']))
-{
-$email = $_POST['email'];
-$password = $_POST['password'];
-//Check If User Exist
-$sql = "SELECT * FROM members WHERE email='$email' AND password='$password'";
-$result = mysql_query($sql);
-$rows=mysql_num_rows($result);
-//If Email and Password Match Login Success
-if($rows==1)
-{
-	// Set email session variable
-	$_SESSION['email'] = $email;
-	while($row = mysql_fetch_assoc($result)) {
-	// Set session variables
-	$_SESSION['member_id'] = $row["member_id"];
-	$_SESSION['role'] = $row["role"];
-	$_SESSION['name'] = $row["member_name"];
-	}
-	// Go To Homepage
-	header('Location: index.php');	
-}
-//If Email and Password Do Not Match Login Fail
-elseif($rows==0)
-{
-	header('Location: login.php?lgnmsg=fail');
-}
-}
-?>
 <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -41,13 +9,13 @@ elseif($rows==0)
                 <span class="icon-bar"></span>
             </button>
             <!-- <a class="navbar-brand" href="index.php">Tempter</a> -->
-            <a href="index.php" class="brand-logo"><img src="images/logo.png" height="100px" alt="Tempter"></a> 
+            <a href="" class="brand-logo"><img src="images/logo.png" height="100px" alt="Tempter"></a> 
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Tempter</a></li>                
+                <li><a href="">Tempter</a></li>                
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -61,18 +29,10 @@ elseif($rows==0)
 	            <div class="login-label text-center">
 				    <h3><u>Login first to view matches</u></h3>				    
 				</div>
-	        </div>
-	        <?php
-				if ($_GET['lgnmsg']=='fail'){
-					echo"<div class='errormsg'>Email and Password Do Not Match</div>";
-				}elseif ($_GET['lgnmsg']=='required'){
-					echo"<div class='errormsg'>Please Login First To Be Granted Access</div>";
-				}elseif ($_GET['lgnmsg']=='admin'){
-					echo"<div class='errormsg'>Login As Admin To Access This Page</div>";
-				}
-			?>
+	        </div>	        
 	    </div>   
         <div class="col-md-12">
+		         <?php if(isset($msg)) { echo $msg; } ?>
          	<form method="post">
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>
@@ -85,12 +45,44 @@ elseif($rows==0)
 				<div class="login-label pull-right" style="margin-bottom:50px;">
 				    <a href=""><p>Forgot Password<p></a>				    
 				</div>
-				<button type="submit" name="submit" class="btn btn-signup" style="width:150px">Sign in</button>
+				<button type="submit" name="btn-login" class="btn btn-signup" style="width:150px">Sign in</button>
 			</form>	
 			<div class="login-label-bottom text-center">		 
-			    <a href="sign-up.php"><p class="text-center login-label-bottom"><u>Create an account if you dont have one</u><p></a>
+			    <a href="index.php"><p class="text-center login-label-bottom"><u>Create an account if you dont have one</u><p></a>
 			</div>	
         </div>        
     </div>
 </div>
+<?php
+include('includes/config.php');
+
+if (isset($_POST['btn-login'])){
+
+$email=$_POST['email'];
+$password=$_POST['password'];
+$hashPassword = md5($password);
+
+
+$login_query=mysqli_query($con, "select * from members where email='$email' and password='$hashPassword'");
+$count=mysqli_num_rows($login_query);
+$row=mysqli_fetch_array($login_query);
+$member_name=$row['member_name'];
+
+if ($count > 0){
+session_start();
+$_SESSION['id']=$row['member_id'];
+$user=$row['member_name'];
+$mem_id=$row['member_id'];
+
+mysqli_query($con, "INSERT INTO history (date,action,member_id,data)VALUES(NOW(),'Login','$mem_id','$user')")or die(mysqli_error());
+
+echo "<script>alert('Successfully Login!'); window.location='online-members.php'</script>";
+}else{
+	$msg = "<div class='alert alert-danger'>
+					<span class='glyphicon glyphicon-info-sign'></span> &nbsp; Invalid Username or Password !
+				</div>";
+?>
+<?php } 
+}
+?>
 <?php include 'footer.php' ?>

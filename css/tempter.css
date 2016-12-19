@@ -111,17 +111,59 @@ hr{
   margin-left: auto;
   width: 1020px;
 }
- .signup-bg 
-{ 
-    left: 50px;
-  /*  top: 100px;*/
-    margin-top: 100px;
+
+/* ========================= sign-up index page styling ================================================================= */
+ .signup-bg{    
+    margin-top: 70px;
     margin-bottom: 40px;
-  /*  position: relative;*/
+    width: 1100px;
     height: 500px;
     background-image: url("../images/Rectangle2.png");
     background-size: cover;    
 }
+.have-fun{ 
+    left: 60px;
+    top: 120px;
+    height: 100px;
+    position: relative;   
+}
+.find-single{ 
+    /*left: 40px;*/
+    top: 120px;
+    height: 100px;
+    position: relative;   
+}
+.signup-form{
+    top: -150px;
+    left: -35px;
+    position: relative;
+    height: 570px;
+    background-image: url("../images/Rectangle2copy.png");
+    /* background-size: cover; */
+}
+.love-stamp img{
+    height: 180px;
+    width: 200px;
+}
+.signup-image 
+{ 
+   left: -300px;
+    top: 170px;
+    height: 100px;
+    position: relative;
+} 
+.signup-image2 
+{ 
+    left: 800px;
+    top: 70px;
+    height: 100px;
+    position: relative;
+} 
+/*.have-find-single img{
+    height: 20px;
+    width: 200px;
+}*/
+/* ========================= end sign-up index page styling ================================================================= */
  .login-bg-l
 { 
     left: 200px;
@@ -142,14 +184,7 @@ hr{
     background-image: url("../images/Rectangle2copy.png");
     background-size: cover;    
 } 
-.signup-form{
-	top: -150px;
-    left: 460px;
-    position: relative;
-    height: 570px;
-    background-image: url("../images/Rectangle2copy.png");
-    /* background-size: cover; */
-}
+
 .btn-signup{
 	background-color: #e20025;
     color: #fff;
@@ -182,20 +217,9 @@ label{
     font-size: 16px;    
     font-weight: bold;
 }
-.signup-label 
-{ 
-    left: 40px;
-    top: 120px;
-    height: 100px;
-    position: relative;   
-} 
-.signup-image 
-{ 
-   left: -250px;
-    top: 220px;
-    height: 100px;
-    position: relative;
-} 
+ 
+
+
 .login-label{
 	font-size: 20px;
     color: #fff;
@@ -309,24 +333,6 @@ body {
     color: #fff;
     background-color: #e20025 !important;
 }
-/*.nav-pills{
-    color: #fff;
-    background-color: #e20025 !important;
-}*/
-.nav-pills > li + li {
-    margin-left: 9px;
-    background-color: #8a191b;
-}
-.nav > li {
-    position: relative;
-    display: block;
-    background-color: brown;
-}
-
-
-
-
-
 /*===================================================================================*/
 a {
     color: #fff;
@@ -336,6 +342,81 @@ footer {
 	margin: 50px 0;
 }
 
+.tabs-left, .tabs-right {
+  border-bottom: none;
+  padding-top: 2px;
+}
+.tabs-left {
+  border-right: 1px solid #ddd;
+}
+.tabs-right {
+  border-left: 1px solid #ddd;
+}
+.tabs-left>li, .tabs-right>li {
+  float: none;
+  margin-bottom: 2px;
+}
+.tabs-left>li {
+  margin-right: -1px;
+}
+.tabs-right>li {
+  margin-left: -1px;
+}
+.tabs-left>li{
+    background-color: #e20025;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {    
+    border-bottom-color: #ffedd7;
+    border-right-color: #ffedd7;
+    background-color: #ffedd7;
+}
 
+tabs-left>li>a:hover{    
+    background-color: #ffedd7;
+}
 
+.tabs-left>li>a {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  display:block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bolder;
+}
 
+.tab-content{
+    background-color: #ffedd7;;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 250px;
+}
+ .edit-profile-label{
+    color: #0f0f0f;
+ }
+ .profile-form{
+    padding:20px;
+ }

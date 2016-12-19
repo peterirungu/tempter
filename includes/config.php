@@ -1,9 +1,25 @@
 <?php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'tempter');
-define('DB_USER','root');
-define('DB_PASSWORD','root');
 
-$con=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD) or die("Failed to connect to MySQL: " . mysql_error());
-$db=mysql_select_db(DB_NAME,$con) or die("Failed to connect to MySQL: " . mysql_error());
+// 	 $DBhost = "localhost";
+// 	 $DBuser = "root";
+// 	 $DBpass = "root";
+// 	 $DBname = "tempter";
+	 
+// 	 $DBcon = new MySQLi($DBhost,$DBuser,$DBpass,$DBname);
+    
+//      if ($DBcon->connect_errno) {
+//          die("ERROR : -> ".$DBcon->connect_error);
+//      }
+// 
+// mysql_select_db('tempter',  mysql_connect('localhost','root','root'))or die(mysql_error());
+
+
+
+// Create connection
+$con=mysqli_connect("localhost","root","root","tempter");// Check connection
+if (mysqli_connect_errno())
+ {
+ echo "Failed to connect to MySQL: " . mysqli_connect_error();
+ }
+
 ?>

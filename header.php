@@ -12,10 +12,4 @@
     <link href="css/tempter.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
-<?php
-//Start the Session
-session_start();  
-// Turn off all error reporting
-error_reporting(0);
-?>
 <body>
