@@ -1,7 +1,6 @@
 <?php
 include('includes/config.php');
 include('session.php');
-
 $logout_query=mysqli_query($con, "select * from members where member_id=$id_session");
 $row=mysqli_fetch_array($logout_query);
 $user=$row['member_name'];

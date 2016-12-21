@@ -15,13 +15,10 @@ body {
     border-color: #e20025;
     height: 30px;
 }
-/*.nav navbar-nav{
-	color: #fff;
-}*/
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 20px;
     }
     .navbar-inverse .navbar-nav > li > a:hover{
     	background-color: #929487;
@@ -38,15 +35,12 @@ body {
 	font-weight:bolder;
 }
 
-hr{ 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    /*color: #222333;*/
+hr{
+  margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ffd7d7;
+
 }
 .thumbnail {
   display: block;
@@ -113,57 +107,129 @@ hr{
 }
 
 /* ========================= sign-up index page styling ================================================================= */
- .signup-bg{    
-    margin-top: 70px;
-    margin-bottom: 40px;
-    width: 1100px;
-    height: 500px;
-    background-image: url("../images/Rectangle2.png");
-    background-size: cover;    
+/*.signup-form{
+    background-color: #7f0001;
 }
-.have-fun{ 
-    left: 60px;
-    top: 120px;
-    height: 100px;
-    position: relative;   
+.signup-form a{
+    text-decoration: none;
 }
-.find-single{ 
-    /*left: 40px;*/
-    top: 120px;
-    height: 100px;
-    position: relative;   
+.btn-signin:hover{
+  background-color: #e6003b;
+  color:#fff; 
+  font-weight:bolder;
+  height: 50px;
 }
-.signup-form{
-    top: -150px;
-    left: -35px;
-    position: relative;
-    height: 570px;
-    background-image: url("../images/Rectangle2copy.png");
-    /* background-size: cover; */
-}
-.love-stamp img{
-    height: 180px;
-    width: 200px;
-}
-.signup-image 
-{ 
-   left: -300px;
-    top: 170px;
-    height: 100px;
-    position: relative;
-} 
-.signup-image2 
-{ 
-    left: 800px;
-    top: 70px;
-    height: 100px;
-    position: relative;
-} 
-/*.have-find-single img{
-    height: 20px;
-    width: 200px;
+.signupbg{  
+    background-color: #e20025;
+    margin-left: 80px;
+    width: 90%;
 }*/
+
+/*================================================================================
+        index (sign up) page styling
+================================================================================*/
+.signup-page{
+  padding-top: 100px;
+}
+
+.signup-form{
+    background-color: #7f0001;
+    height: 500px;
+    top: -30px;
+}
+.signup-form a{
+    text-decoration: none;
+}
+.btn-signin:hover{
+  background-color: #e6003b;
+  color:#fff; 
+  font-weight:bolder;
+  height: 50px;
+}
+.signupbg{  
+    background-color: #e20025;
+}
+.signupbg{  
+    background-color: #e20025;
+    height: 450px;
+    margin-bottom: 40px;
+    }
+
+.btn-signin{
+  background-color: #e20025;
+  color: #7f0001;
+  font-weight: bold;
+  border-color: #e20025;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+.btn-signup{
+  background-color: #e20025;
+  color: #fff;
+  font-weight: bold;
+  border-color: #e20025;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+  margin-left: 20px;
+}
+.btn-signup:hover{
+  background-color: #e6003b;
+  color:#fff; 
+  font-weight:bolder;
+  height: 50px;
+}
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+.form-control-signup {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    color: #0b0b0b;
+    background-color: #7f0001;
+    border: 1px solid #7f0001;
+    border-bottom: 1px solid #e20025;
+    font-size: 16px;    
+    font-weight: bold;
+}
+.lovestamp{    
+    margin-top: 35px;    
+    margin-left: 40px;
+}
 /* ========================= end sign-up index page styling ================================================================= */
+ /*================================================================================
+    login page styling (style onle the login form) page refer index(sign up)
+================================================================================*/
+.btn-signin-login {
+    background-color: #e20025;
+    color: #ffffff;
+    font-weight: bold;
+    border-color: #e20025;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+.btn-signup-login {
+    background-color: #e20025;
+    color: #7f0001;
+    font-weight: bold;
+    border-color: #e20025;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    margin-left: 20px;
+}
+.login-form{
+  padding-top: 50px;
+}
+
+
+
  .login-bg-l
 { 
     left: 200px;
@@ -185,14 +251,23 @@ hr{
     background-size: cover;    
 } 
 
-.btn-signup{
+.btn-signin{
 	background-color: #e20025;
-    color: #fff;
-    font-weight: bold;
-    border-color: #e20025;
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 9px;
+  color: #7f0001;
+  font-weight: bold;
+  border-color: #e20025;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+.btn-signup{
+  background-color: #e20025;
+  color: #fff;
+  font-weight: bold;
+  border-color: #e20025;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 9px;
 }
 .btn-signup:hover{
 	background-color: #e6003b;
@@ -263,9 +338,13 @@ label{
 	/*left: 50px;
     top: 100px;*/
     /*position: relative;*/
-    height: 70px;
-    background-image: url("../images/Rectangle2.png");
-    background-size: cover;    
+    height: 80px;
+    /*background-color: #e20025;*/
+    background: #e20025; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e20025, #ff00b8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e20025, #ff00b8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e20025, #ff00b8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e20025, #ff00b8); /* Standard syntax (must be last) */
 }
 .widget-user .widget-user-image {
     position: absolute;
@@ -420,3 +499,42 @@ tabs-left>li>a:hover{
  .profile-form{
     padding:20px;
  }
+/*=============================================================================*/
+
+.btn-edit-profile-nav{
+  background-color: #e20025;
+  color: #fff;
+}
+.glyphicon-user{
+  color: #7f0001;
+}
+.btn-edit-profile-gallery-nav{
+  background-color: #7f0001;
+  color: #fff;
+}
+.ico-camera{
+  color: #e20025;
+}
+.edit-profile-divider{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid #ffd7d7;
+}
+ .box1 {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: none;
+    border-left: 1px solid #e20025;
+    border-right: 1px solid #e20025;
+    border-bottom: none;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.table > tbody > tr > td{
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #ffd7d7;
+}

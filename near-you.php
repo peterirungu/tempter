@@ -1,5 +1,5 @@
 <?php include 'header.php' ?>
-<?php include 'navbar.php' ?>
+<?php include 'navbar-auth.php' ?>
 <div class="row-rl-margin">
 <p style="color:#662200; font-weight:bold;">Near You</p>
 <hr style="color:#662200;">

@@ -1,5 +1,5 @@
 <?php include 'header.php' ?>
-<?php include 'navbar.php' ?>
+<?php include 'navbar-auth.php' ?>
 <div class="business-header">
 <img src="images/b1.jpg" alt="" width="100%" height="290px">
 <div class="container">
