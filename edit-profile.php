@@ -12,8 +12,8 @@
 		   </div>                
 		</div>
 		<div class="col-lg-11">
-			<a href="#"><button class="btn btn-edit-profile-nav"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Profile</button></a>
-			<a href="#"><button class="btn btn-edit-profile-gallery-nav"><span class="glyphicon glyphicon-camera ico-camera" aria-hidden="true"></span>  Gallery</button></a>
+			<a href="edit-profile.php"><button class="btn btn-edit-profile-nav"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Profile</button></a>
+			<a href="my-gallery.php"><button class="btn btn-edit-profile-gallery-nav"><span class="glyphicon glyphicon-camera ico-camera" aria-hidden="true"></span>  Gallery</button></a>
 			<a href="profile-view.php"><button class="btn btn-edit-profile-nav pull-right"> View Profile</button></a>
 			<!-- profile photo upload -->
 			<div class="clearfix" style="padding:3px;"></div>
@@ -23,12 +23,17 @@
 		            <div class="widget-user-header">              
 		            </div>
 		            <div class="widget-user-image">
-		              <img class="img-circle" src="images/g2.png" alt="User Avatar" width="130px" height="130px">
+		              <img class="img-circle" id='img-upload' onerror="this.src='images/default.jpeg';" width="130px" height="130px">
 		            </div>
 		            <div class="box-footer">
 		                <div class="row">
 		                    <div class="col-md-12 text-center">
-		                       <a href="#"><button class="btn btn-edit-profile-nav"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span>  Upload Profile Picture</button></a>
+		                       <!-- <button class="btn btn-edit-profile-nav"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span> <input type="file" id="imgInp"></button> -->
+		                       <span class="input-group-btn">
+							                <span class="btn btn-edit-profile-nav btn-file"><span class="glyphicon glyphicon-upload"></span>
+							                    Upload profile picture<input type="file" id="imgInp">
+							                </span>
+							            </span>
 		                    </div>
 		                    <!-- /.description-block -->                                      
 		                    <br>

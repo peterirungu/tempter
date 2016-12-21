@@ -491,7 +491,7 @@ tabs-left>li>a:hover{
 }
 
 #img-upload{
-    width: 250px;
+    /*width: 250px;*/
 }
  .edit-profile-label{
     color: #0f0f0f;
@@ -537,4 +537,19 @@ tabs-left>li>a:hover{
   line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #ffd7d7;
+}
+
+.btn-my-gallery-profile-nav{
+  background-color: #7f0001;
+  color: #fff;
+}
+.ico-user-gallery{
+  color: #e20025;
+}
+.btn-my-gallery-nav{
+  background-color: #e20025;
+  color: #fff;
+}
+.ico-camera-gallery{
+  color: #7f0001;
 }

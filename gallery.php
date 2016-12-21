@@ -1,7 +1,3 @@
-<?php include 'header.php' ?>
-<?php include 'navbar.php' ?>
-<div class="row-rl-margin">  
-	<br>
 	<div class="row">	    
 	    <div  class="col-sm-12">
 	        <hr/>
@@ -120,7 +116,7 @@
 							        <div class="input-group">
 							            <span class="input-group-btn">
 							                <span class="btn btn-default btn-file">
-							                    Browse… profile picture<input type="file" id="imgInp">
+							                    Browse… profile picture<input type="file" name="ppic" id="imgInp">
 							                </span>
 							            </span>
 							            <input type="text" name="ppic" class="form-control" readonly>
@@ -211,4 +207,3 @@
 	   <!-- /.row -->
     </div>
     </div>
-<?php include 'footer.php' ?>
