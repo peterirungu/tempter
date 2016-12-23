@@ -354,6 +354,7 @@ label{
     }
     .widget-user .box-footer {
     padding-top: 70px;
+    background-color: #f5e7e7;
 }
 .box-footer {
     border-top-left-radius: 0;
@@ -503,6 +504,10 @@ tabs-left>li>a:hover{
 
 .btn-edit-profile-nav{
   background-color: #e20025;
+  color: #fff;
+}
+.btn-edit-profile-nav:hover{
+  background-color: #770001;
   color: #fff;
 }
 .glyphicon-user{

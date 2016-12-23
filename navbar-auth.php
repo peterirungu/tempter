@@ -19,11 +19,11 @@
             <ul class="nav navbar-nav">
                 <li><a href="near-you.php">Near You</a></li>
                 <li><a href="view-match.php">Matches</a></li>
-                <li><a href="#">Get Escort</a></li>
+                <!--<li><a href="#">Get Escort</a></li> -->
                 <li><a href="#">Recent Activity</a></li> 
                 <?php
                   include('includes/config.php');
-                  $user_query=mysqli_query($con, "select *  from members where member_id='$id_session'")or die(mysqli_error());
+                  $user_query=mysqli_query($con, "select *  from profile_tbl where member_id='$id_session'")or die(mysqli_error());
                   $row=mysqli_fetch_array($user_query); {
                 ?>
                 <li class="nav navbar-right dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.php"><img src="images/g1.png" height="31px" alt="Tempter"><span class="caret"></span><?php echo $row['member_id']; ?></a>

@@ -13,15 +13,15 @@
                     <form method="post">                        
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" name="member_name" class="form-control-signup" id="signup-name" aria-describedby="emailHelp" placeholder="Enter Your Name" required="fill in this field">    
+                            <input type="text" name="name" class="form-control-signup" id="signup-name" placeholder="Enter Your Name" required="fill in this field">    
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" name="email" class="form-control-signup" aria-describedby="emailHelp" placeholder="Enter Your email Address" required="fill in this field">
+                            <input type="email" name="email" class="form-control-signup" placeholder="Enter Your email Address" required="fill in this field">
                         </div>
                         <div class="form-group">
                             <label for="name">Location</label>
-                            <input type="text" name="location" class="form-control-signup" placeholder="Enter Your Location" required="fill in this field">    
+                            <input type="text" name="city" class="form-control-signup" placeholder="Enter Your Location" required="fill in this field">    
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>

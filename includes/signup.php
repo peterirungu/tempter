@@ -1,15 +1,16 @@
 <?php
 	include 'config.php';
 	if (isset($_POST['signup'])){
-	    $member_name = $_POST['member_name'];
+	    $name = $_POST['name'];
 	    $email = $_POST['email'];
-	    $location = $_POST['location'];    
+	    $city = $_POST['city'];    
 	    $password= $_POST['password'];
         $hash_password = md5($_POST['password']);		    
 
-	$sql_ins=mysqli_query($con, "insert into members(member_name, email, location, password, role) values ('$member_name','$email', '$location', '$hash_password', 'member' ) ")or die(mysqli_error());
+	$sql_ins=mysqli_query($con, "insert into profile_tbl(name, email, city, password, role) values ('$name','$email', '$city', '$hash_password', 'member' ) ")or die(mysqli_error());
 	if($sql_ins==true)
-			header('Location: login.php');
+			// header('Location: login.php');
+		echo "<script>alert('Successfully registered proceed to login!'); window.location='login.php'</script>";
 	else
 		$msg="Insert Error:".mysqli_error();
 	}

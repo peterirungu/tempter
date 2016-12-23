@@ -8,16 +8,16 @@ $password=$_POST['password'];
 $hashPassword = md5($password);
 
 
-$login_query=mysqli_query($con, "select * from members where email='$email' and password='$hashPassword'");
+$login_query=mysqli_query($con, "select * from profile_tbl where email='$email' and password='$hashPassword'");
 $count=mysqli_num_rows($login_query);
 $row=mysqli_fetch_array($login_query);
-$member_name=$row['member_name'];
+$name=$row['name'];
 
 if ($count > 0){
 session_start();
 $_SESSION['id']=$row['member_id'];
-$user=$row['member_name'];
-// $mem_id=$row['member_id'];
+$user=$row['name'];
+$mem_id=$row['member_id'];
 
 mysqli_query($con, "INSERT INTO history (date,action,member_id,data)VALUES(NOW(),'Login','$mem_id','$user')")or die(mysqli_error());
 
